@@ -1,0 +1,75 @@
+html{
+    font-size: 62.5;
+    box-sizing: border-box;
+}
+
+body{
+    font: 1.6rem Helvectica;
+    height: 100vh;
+    margin: 0;
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    "header" 
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 5rem;
+    height: 100%;
+
+}
+.header{
+    grid-area: header;
+    background-color: #203040;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+.link {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+.link:hover{
+    color: #ff8000;
+}
+.main{
+    grid-area: main;
+}
+.footer{
+    grid-area: footer;
+    background-color: #203040;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-list{
+    background-color: #f8f8f8;
+    border-radius: 1rem;
+    border: 0.2rem #203040 solid;  
+}
+.message-list li{
+    margin-top: 1rem;
+    color: #ac9c8c;
+    list-style-type: none;
+}
+
+.message-sent input{
+    border: .2rem rgb(32, 18, 18) solid;
+    border-radius: 2rem;
+}
+
+.message-sent button{
+    fill: #ff0000 ;
+    background-color: rgb(112, 105, 102);
+    border-radius: 2rem;
+}
+
+

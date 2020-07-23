@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="stylesheet" href="style.css">
+        <title>
+            chat App
+        </title>
+        <script defer src="http://localhost:3000/socket.io/socket.io.js">
+        </script>
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <div class="grid-container">
+            <header class="header">
+                Online Global chat
+            </header>
+            <aside class="aside">
+
+            </aside>
+            <main class="main">
+                <div class="message-list">
+                        <ul id="messgs" class="messgs">
+                            <li>
+                                message1 
+                            </li>
+                            <li>
+                                message2 
+                            </li>
+                            <li>
+                                message3 
+                            </li>
+                        </ul>
+                </div>
+                <div id="message-sent" class="message-sent">
+                    <input id="message" class="message"/>
+                    <button onclick="send()" class="sent-button" > Send </button>
+                </div>                
+            </main>
+            <footer class="footer">
+                Developer : <div class="link">Gourav Goel </div> ( <div class="link">b18014@students.iitmandi.ac.in</div> )
+            </footer>
+        </div>
+    </body>
+</html>
